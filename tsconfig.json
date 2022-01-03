@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "outDir": "dist"
+  },
+  "lib": ["es2015"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.js"],
+  "exclude": ["node_modules"]
+}
