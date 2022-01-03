@@ -53,8 +53,8 @@ async function saveFile(data, path) {
     // Extracting the data
     const id = rows[i].children[0].children[0].children[0].data;
     const name = rows[i].children[1].children[0].children[0].children[0].data;
-    const value = rows[i].children[1].children[0].children[3].children[0].data;
-    res[id] = { name, value };
+    const moves = rows[i].children[1].children[0].children[3].children[0].data;
+    res[id] = { name, moves };
   }
 
   // Save the data
