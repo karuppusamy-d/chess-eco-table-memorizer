@@ -9,7 +9,7 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "outDir": "dist"
+    "outDir": "build"
   },
   "lib": ["es2015"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.js"],
