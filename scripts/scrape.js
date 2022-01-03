@@ -6,17 +6,6 @@ import cheerio from "cheerio";
 const URL = "https://www.chessgames.com/chessecohelp.html";
 const FILE_NAME = "src/data.json";
 
-/*------------- CREATE DIRECTORYS --------------*/
-try {
-  if (fs.existsSync("build")) {
-    fs.rmSync("build", { recursive: true });
-  }
-  fs.mkdirSync("build", { recursive: true });
-} catch (err) {
-  console.error(err);
-  throw new Error("Failed Creating Folder");
-}
-
 /*------------- HELPER FUNCTIONS --------------*/
 // function to get the raw data
 const getRawData = (url) => {
@@ -36,6 +25,7 @@ async function saveFile(data, path) {
 }
 
 /*------------- SCRAPE DATA --------------*/
+
 (async () => {
   console.log("Starting Scrape...");
 
@@ -49,7 +39,7 @@ async function saveFile(data, path) {
   const rows = parsedData("tr");
 
   const res = {};
-  for (let i = 0; i < rows.length; i++) {
+  for (let i = 1; i < rows.length; i++) {
     // Extracting the data
     const id = rows[i].children[0].children[0].children[0].data;
     const name = rows[i].children[1].children[0].children[0].children[0].data;
