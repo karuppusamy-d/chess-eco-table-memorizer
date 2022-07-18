@@ -1,0 +1,24 @@
+# Chess ECO Table Memorizer
+
+---
+
+Deployed Link: https://chess-eco-table-memorizer.herokuapp.com/
+
+GitHub Repository: https://github.com/karuppusamy-d/chess-eco-table-memorizer
+
+I have completed all the tasks given.
+
+1.  Create scraper script
+2.  Add GET endpoints “/” and “/CODE”
+3.  Set TTL to 180 seconds
+4.  Deployed in Heroku
+5.  Advanced feature to compute next move.
+
+By default scraper script runs whenever build script is called.
+Use `yarn scrape` or `npm run scrape` to run scraper manually.
+
+https://chess-eco-table-memorizer.herokuapp.com/
+
+https://chess-eco-table-memorizer.herokuapp.com/C87
+
+https://chess-eco-table-memorizer.herokuapp.com/C87/e4/e5/Nf3/Nc6/Bb5/a6/Ba4
